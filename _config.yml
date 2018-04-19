@@ -1,12 +1,12 @@
 # Site settings
 title: GB&J Creating Apps for YOU
-description: A blog about lorem ipsum dolor sit amet
+description: GB&J Creating Apps for YOU
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: GB&J LLC
-user_description: GB&J LLC is an innovative app development company dedicated to proving quality content for all users. Follow us to keep up to date with our latest apps!
+user_description: Our story begins in university where a group of friends wanted to create a motivational app that we would use for ourselves to keep motivated while studying Electrical and Computer Engineering. While developing this app, we found it to be so helpful that we decided we wanted to release it on the market to help everyone get a little motivation throughout the day. Using our names (Gabriel, Blake, & James) we formed GB&J (like PB&J) LLC with Sammy the Sandwich as our company mascot :) Follow us to keep up to date with our latest apps! 
 user_title: App Development Company
 email: contact@GBJmobile.com
 twitter_username: lorem_ipsum
