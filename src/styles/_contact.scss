@@ -1,14 +1,4 @@
 #contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  @media only screen and (min-width: $cut) {
-    width: 80%;
-  }
-}
 
 //colors
 $color_celeste_approx: #ccc;
@@ -53,6 +43,7 @@ input[type=submit] {
 	&:hover {
 		background-color: $color_apple_approx;
 	}
+}
 }
 .container {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
