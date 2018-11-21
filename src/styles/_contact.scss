@@ -1,3 +1,15 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
 //colors
 $color_celeste_approx: #ccc;
 $color_apple_approx: #4caf50;
