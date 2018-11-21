@@ -1,43 +1,50 @@
-/* Style inputs with type="text", select elements and textareas */
+//colors
+$color_celeste_approx: #ccc;
+$color_apple_approx: #4caf50;
+$white: white;
+$concrete: #f2f2f2;
 
-input[type=text], select, textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
+//@extend-elements
+//original selectors
+//input[type=text], select, textarea
+%extend_1 {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid $color_celeste_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
 
-/* Style the submit button with a specific background color etc */
 
+input[type=text] {
+	@extend %extend_1;
+}
+select {
+	@extend %extend_1;
+}
+textarea {
+	@extend %extend_1;
+}
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  &:hover {
-    background-color: #45a049;
-  }
+	background-color: $color_apple_approx;
+	color: $white;
+	padding: 12px 20px;
+	border: none;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	cursor: pointer;
+	&:hover {
+		background-color: $color_apple_approx;
+	}
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
-
-/* Add a background color and some padding around the form */
-
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	background-color: $concrete;
+	padding: 20px;
 }
